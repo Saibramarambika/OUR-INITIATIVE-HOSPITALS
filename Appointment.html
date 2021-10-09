@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="Our Initiative Logo.png">
+    <link rel="stylesheet" href="style1.css">
+    <title>Appointment</title>
+</head>
+<body>
+    <div>
+        <div class="container">
+            
+            <header>
+              <h1 id="title">Appointment Form</h1>
+              
+            </header>
+            
+            <form action="?" id="survey-form"  method="POST">
+              
+              <div class="form-option">
+                <label for="name" id="name-label">name</label>
+                <input type="text" id="name" name="username" placeholder="Enter your name" required>
+              </div>
+              
+              <div class="form-option">
+                <label for="email" id="email-label">email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              </div>
+              
+              <div class="form-option">
+                <label for="number" id="number-label">age <span class="optional"></span></label>
+                <input type="number" id="number" name="age" placeholder="Age" min="10" max="100">
+              </div>
+              
+              <div class="form-option">
+                <p>Is it your first appointment?</p>
+                <div class="form-radio-option">
+                  <input type="radio" id="yes" name="appointment" value="yes">
+                  <label for="yes">yes</label>
+                </div>
+                <div class="form-radio-option">
+                  <input type="radio" id="no" name="cooking-level" value="no">
+                  <label for="no">no</label>
+                </div>
+                
+                  
+              </div>
+              
+              <div class="form-option">
+                <p>Whose appointment do you need?</p>
+                <select name="Whose appointment do you need?" id="dropdown">
+                  <option disabled selected value>Select Option</option>
+                  <option value="sam">Sam</option>
+                  <option value="meera">Meera</option>
+                  <option value="john">John</option>
+                  <option value="john">Samir</option>
+                  <option value="john">Pawan</option>
+                </select>
+              </div>
+              
+              
+              <div class="form-option">
+                <p>any message?</p>
+                <textarea name="comment" id="user-comment" placeholder="Enter your comment here..."></textarea>
+              </div>
+              
+              <div class="form-option">
+                <input onclick="myFunction()" type="submit" value="submit" id="submit" class="submit">
+              </div>
+            </form>
+          </div>
+    </div>
+
+    <script>
+        function myFunction() {
+          alert("You have successfully made an appointment!");
+        }
+    </script>
+</body>
+</html>

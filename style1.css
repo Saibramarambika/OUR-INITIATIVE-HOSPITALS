@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+:root {
+  --white-color: #fff;
+  --greenish-color: #779396;
+}
+::placeholder {
+  font-size: 15px;
+  font-family: inherit;
+  color: var(--greenish-color);
+}
+:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.1rem rgba(139, 160, 182, 0.25);
+  transition: 0.2s linear;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.optional {
+  font-weight: lighter;
+  font-size: 15px;
+}
+.form-option:not(:last-child) {
+  margin-bottom: 20px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
+}
+body::after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsl(232, 65%, 81%);
+  
+   
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  z-index: -1;
+}
+.container {
+  width: 70%;
+  margin: 75px auto;
+}
+
+.container header {
+  text-align: center;
+  padding: 10px;
+  color: var(--white-color);
+  margin-bottom: 25px;
+}
+.container header h1 {
+  margin-bottom: 10px;
+}
+.container form {
+  padding: 30px;
+  background: var(--white-color);
+  border-radius: 6px;
+}
+.form-option p {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+input,
+textarea,
+select {
+  width: 100%;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-size: 18px;
+  font-family: inherit;
+  -webkit-accent-color: var(--greenish-color);
+  -moz-accent-color: var(--greenish-color);
+  background-color: var(--greenish-color);
+}
+select option {
+  text-transform: capitalize;
+}
+textarea {
+  resize: vertical;
+  height: 180px;
+}
+.form-radio-option {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+.form-radio-option label,
+.form-checkbox-option label {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 500;
+}
+.form-radio-option input,
+.form-checkbox-option input {
+  display: inline-block;
+  margin-right: 5px;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.submit {
+  display: block;
+  background: hsl(185, 34%, 54%);
+  color: var(--white-color);
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: background-color 0.2s linear;
+}
+.submit:hover {
+  background: hsl(185, 100%, 28%);
+}
+

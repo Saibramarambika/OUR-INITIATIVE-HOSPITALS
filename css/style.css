@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #3AA789;
+  font-family: "Merriweather", serif;
+  font-size: 15px;
+}
+
+header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  border: black;
+  border-width: 3px;
+  border-style: solid;
+  width: 50rem;
+  margin-left: 12rem;
+}
+
+header .mainimg {
+  height: 28rem;
+  width: 1190px;
+  border-radius: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.logo {
+  height: 2rem;
+  border-radius: 6rem;
+}
+
+a.button1 {
+  display: inline-block;
+  padding: 0.5em 3em;
+  border: 0.16em solid #FFFFFF;
+  margin: 0 0.3em 0.3em 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+  margin-left: 5rem;
+}
+
+a.button1:hover {
+  color: #DDDDDD;
+  border-color: #DDDDDD;
+}
+
+a.button1:active {
+  color: #BBBBBB;
+  border-color: #BBBBBB;
+}
+
+.navbar {
+  margin: 12px 60px;
+  display: inline-block;
+  width: 80%;
+}
+
+.list1 {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin: 12px 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #f6e165;
+  font-size: 28px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+section .sec1 {
+  text-align: center;
+  margin: 4rem;
+}
+
+section .sec1 h2 {
+  text-transform: uppercase;
+}
+
+section .sec2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin: 4rem;
+}
+
+section .sec3 {
+  text-align: center;
+  margin: 4rem;
+}
+
+section .sec3 .doctor {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 3rem;
+  margin-left: 2rem;
+}
+
+section .sec4 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+/*# sourceMappingURL=style.css.map */
